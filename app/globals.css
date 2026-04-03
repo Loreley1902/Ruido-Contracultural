@@ -4,41 +4,39 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Ruido Contracultural - Bold Contrast Palette */
-  --ink: #0D0D0D;
-  --charcoal: #1A1A1A;
-  --graphite: #2A2A2A;
-  --slate: #3D3D3D;
-  --smoke: #6B6B6B;
-  --silver: #9A9A9A;
-  --pearl: #E8E8E8;
-  --snow: #F5F5F5;
-  --white: #FFFFFF;
-  --coral: #FF6B5B;
-  --coral-light: #FF8A7D;
-  --coral-dark: #E55A4A;
-  --amber: #FFB347;
+  /* Ruido Contracultural - Warm & Youthful Palette */
+  --cream: #FAF7F2;
+  --ivory: #F5F1E8;
+  --sand: #E8E0D0;
+  --taupe: #D4C8B8;
+  --caramel: #C4A77D;
+  --coffee: #8B7355;
+  --espresso: #5C4A3D;
+  --chocolate: #3D2E24;
+  --terracotta: #C67B5C;
+  --rust: #B85C38;
+  --sage: #A8B5A0;
   
-  --background: var(--ink);
-  --foreground: var(--pearl);
-  --card: var(--charcoal);
-  --card-foreground: var(--pearl);
-  --popover: var(--graphite);
-  --popover-foreground: var(--pearl);
-  --primary: var(--coral);
-  --primary-foreground: var(--ink);
-  --secondary: var(--graphite);
-  --secondary-foreground: var(--pearl);
-  --muted: var(--slate);
-  --muted-foreground: var(--smoke);
-  --accent: var(--coral);
-  --accent-foreground: var(--ink);
+  --background: var(--cream);
+  --foreground: var(--chocolate);
+  --card: var(--ivory);
+  --card-foreground: var(--chocolate);
+  --popover: var(--ivory);
+  --popover-foreground: var(--chocolate);
+  --primary: var(--terracotta);
+  --primary-foreground: var(--cream);
+  --secondary: var(--sand);
+  --secondary-foreground: var(--espresso);
+  --muted: var(--taupe);
+  --muted-foreground: var(--coffee);
+  --accent: var(--rust);
+  --accent-foreground: var(--cream);
   --destructive: #dc2626;
   --destructive-foreground: #fef2f2;
-  --border: var(--slate);
-  --input: var(--graphite);
-  --ring: var(--coral);
-  --radius: 4px;
+  --border: var(--taupe);
+  --input: var(--sand);
+  --ring: var(--terracotta);
+  --radius: 8px;
 }
 
 @theme inline {
