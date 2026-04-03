@@ -32,9 +32,9 @@ export default function HomePage() {
           </div>
           <div className="bg-beige rounded p-8 md:p-10 border-l-[3px] border-brown">
             <blockquote className="font-serif text-base md:text-lg text-espresso leading-relaxed italic mb-4">
-              &ldquo;Ya no es la ausencia de lenguaje lo que nos separa, sino la incapacidad de usarlo con conciencia.&rdquo;
+              &ldquo;Dicen que no hablan las plantas, ni las fuentes, ni los pájaros… pero hablan, y dicen cosas de mujer.&rdquo;
             </blockquote>
-            <cite className="text-xs text-muted-text tracking-wider uppercase not-italic">— El sutil fracaso de las palabras</cite>
+            <cite className="text-xs text-muted-text tracking-wider uppercase not-italic">— Rosalía de Castro</cite>
           </div>
         </div>
       </section>
@@ -56,7 +56,6 @@ export default function HomePage() {
                 width={600}
                 height={180}
                 className="w-full h-full object-cover"
-                style={{ width: '100%', height: '100%' }}
               />
             </div>
             <div className="text-[0.67rem] font-medium tracking-widest uppercase text-brown mb-1.5">
@@ -80,7 +79,6 @@ export default function HomePage() {
                 width={400}
                 height={110}
                 className="w-full h-full object-cover"
-                style={{ width: '100%', height: '100%' }}
               />
             </div>
             <div className="text-[0.67rem] font-medium tracking-widest uppercase text-brown mb-1">
@@ -104,7 +102,6 @@ export default function HomePage() {
                 width={400}
                 height={110}
                 className="w-full h-full object-cover"
-                style={{ width: '100%', height: '100%' }}
               />
             </div>
             <div className="text-[0.67rem] font-medium tracking-widest uppercase text-brown mb-1">
@@ -153,9 +150,9 @@ export default function HomePage() {
       {/* Quote Banner */}
       <section className="bg-beige border-y border-sand px-6 md:px-10 py-12 text-center">
         <blockquote className="font-serif italic text-lg md:text-xl text-espresso leading-relaxed max-w-2xl mx-auto mb-4">
-          &ldquo;Dicen que no hablan las plantas, ni las fuentes, ni los pájaros… pero hablan, y dicen cosas de mujer.&rdquo;
+          &ldquo;Nuestra facilidad para olvidar se ha convertido en una carga colectiva. Deslizamos el scroll frente a situaciones que merecen detener nuestra mirada.&rdquo;
         </blockquote>
-        <cite className="text-xs text-muted-text tracking-wider uppercase not-italic">— Rosalía de Castro</cite>
+        <cite className="text-xs text-muted-text tracking-wider uppercase not-italic">— Ruido Contracultural</cite>
       </section>
     </>
   )
