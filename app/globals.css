@@ -4,39 +4,40 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Ruido Contracultural - Warm & Youthful Palette */
-  --cream: #FAF7F2;
-  --ivory: #F5F1E8;
-  --sand: #E8E0D0;
-  --taupe: #D4C8B8;
-  --caramel: #C4A77D;
-  --coffee: #8B7355;
-  --espresso: #5C4A3D;
-  --chocolate: #3D2E24;
-  --terracotta: #C67B5C;
-  --rust: #B85C38;
-  --sage: #A8B5A0;
+  /* Ruido Contracultural Color Palette */
+  --cream: #F5F0E8;
+  --warm-white: #FDFAF5;
+  --beige: #E8E0D0;
+  --sand: #D4C9B0;
+  --brown: #8B6F47;
+  --dark-brown: #5C4B35;
+  --espresso: #3A2E22;
+  --blush: #EDD8C8;
+  --sage: #C2CEC0;
+  --dusty: #D9B8B8;
+  --text: #4A3F35;
+  --muted-text: #8B7D6B;
   
-  --background: var(--cream);
-  --foreground: var(--chocolate);
-  --card: var(--ivory);
-  --card-foreground: var(--chocolate);
-  --popover: var(--ivory);
-  --popover-foreground: var(--chocolate);
-  --primary: var(--terracotta);
+  --background: var(--warm-white);
+  --foreground: var(--text);
+  --card: var(--cream);
+  --card-foreground: var(--espresso);
+  --popover: var(--cream);
+  --popover-foreground: var(--text);
+  --primary: var(--espresso);
   --primary-foreground: var(--cream);
-  --secondary: var(--sand);
+  --secondary: var(--beige);
   --secondary-foreground: var(--espresso);
-  --muted: var(--taupe);
-  --muted-foreground: var(--coffee);
-  --accent: var(--rust);
+  --muted: var(--sand);
+  --muted-foreground: var(--muted-text);
+  --accent: var(--brown);
   --accent-foreground: var(--cream);
   --destructive: #dc2626;
   --destructive-foreground: #fef2f2;
-  --border: var(--taupe);
-  --input: var(--sand);
-  --ring: var(--terracotta);
-  --radius: 8px;
+  --border: var(--sand);
+  --input: var(--beige);
+  --ring: var(--brown);
+  --radius: 3px;
 }
 
 @theme inline {
@@ -62,19 +63,18 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-ink: var(--ink);
-  --color-charcoal: var(--charcoal);
-  --color-graphite: var(--graphite);
-  --color-slate: var(--slate);
-  --color-smoke: var(--smoke);
-  --color-silver: var(--silver);
-  --color-pearl: var(--pearl);
-  --color-snow: var(--snow);
-  --color-white: var(--white);
-  --color-coral: var(--coral);
-  --color-coral-light: var(--coral-light);
-  --color-coral-dark: var(--coral-dark);
-  --color-amber: var(--amber);
+  --color-cream: var(--cream);
+  --color-warm-white: var(--warm-white);
+  --color-beige: var(--beige);
+  --color-sand: var(--sand);
+  --color-brown: var(--brown);
+  --color-dark-brown: var(--dark-brown);
+  --color-espresso: var(--espresso);
+  --color-blush: var(--blush);
+  --color-sage: var(--sage);
+  --color-dusty: var(--dusty);
+  --color-text: var(--text);
+  --color-muted-text: var(--muted-text);
   --radius-sm: calc(var(--radius) - 1px);
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 2px);
