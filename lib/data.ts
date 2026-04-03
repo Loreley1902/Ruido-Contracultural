@@ -107,6 +107,16 @@ export const poems: Poem[] = [
       "Caminemos como quien no\ntiene adónde llegar, encontrando\nel destino en cada esquina\ny perdiéndolo al cruzar.",
       "Caminemos y, en el camino,\nescuchemos lo que dicen las aves:\nno hay destino\nadónde llegar."
     ]
+  },
+  {
+    slug: "carino",
+    title: "Cariño",
+    number: 4,
+    preview: "Cariño, cómo suenan más lentos tus pasos al marcharte, cómo cierras con tanta suavidad las puertas y ventanas…",
+    date: "Abril 2026",
+    verses: [
+      "Cariño, cómo suenan más lentos tus pasos al marcharte,\ncómo cierras con tanta suavidad las puertas y ventanas."
+    ]
   }
 ]
 

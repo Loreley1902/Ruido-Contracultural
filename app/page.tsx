@@ -55,7 +55,7 @@ export default function HomePage() {
                 alt={essays[0].title}
                 width={600}
                 height={180}
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-cover"
               />
             </div>
             <div className="text-[0.67rem] font-medium tracking-widest uppercase text-brown mb-1.5">
@@ -78,7 +78,7 @@ export default function HomePage() {
                 alt={essays[1].title}
                 width={400}
                 height={110}
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-cover"
               />
             </div>
             <div className="text-[0.67rem] font-medium tracking-widest uppercase text-brown mb-1">
@@ -101,7 +101,7 @@ export default function HomePage() {
                 alt={essays[2].title}
                 width={400}
                 height={110}
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-cover"
               />
             </div>
             <div className="text-[0.67rem] font-medium tracking-widest uppercase text-brown mb-1">
