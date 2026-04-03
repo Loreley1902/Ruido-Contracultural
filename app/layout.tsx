@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#F5F0E8',
+  themeColor: '#0D0D0D',
 }
 
 export default function RootLayout({
@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${dmSans.variable} ${playfair.variable} font-sans antialiased bg-warm-white text-text`}>
+      <body className={`${dmSans.variable} ${playfair.variable} font-sans antialiased bg-ink text-pearl`}>
         <Navbar />
         <main>{children}</main>
         <Footer />

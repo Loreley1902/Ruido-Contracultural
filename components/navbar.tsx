@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 
@@ -17,22 +16,27 @@ const poems = [
   { slug: "caminemos", title: "Poema 3 — Caminemos" },
 ]
 
+// Logo component with stylized quotes
+function Logo() {
+  return (
+    <div className="flex items-center gap-3">
+      <div className="w-10 h-10 bg-coral rounded flex items-center justify-center">
+        <span className="font-serif text-2xl text-ink font-semibold leading-none">&laquo;&raquo;</span>
+      </div>
+      <span className="font-serif text-xl text-pearl">
+        Ruido <em className="text-coral">Contracultural</em>
+      </span>
+    </div>
+  )
+}
+
 export function Navbar() {
   const pathname = usePathname()
   
   return (
-    <nav className="bg-cream border-b border-sand px-6 md:px-10 flex items-center justify-between h-[62px] sticky top-0 z-50">
-      <Link href="/" className="flex items-center gap-3">
-        <Image 
-          src="/images/logo.jpg" 
-          alt="Ruido Contracultural logo" 
-          width={36} 
-          height={36}
-          className="rounded-full"
-        />
-        <span className="font-serif text-xl text-espresso">
-          Ruido <em className="text-brown">Contracultural</em>
-        </span>
+    <nav className="bg-charcoal border-b border-slate px-6 md:px-10 flex items-center justify-between h-[62px] sticky top-0 z-50">
+      <Link href="/">
+        <Logo />
       </Link>
       
       <ul className="hidden md:flex items-center gap-8">
@@ -40,8 +44,8 @@ export function Navbar() {
           <Link 
             href="/" 
             className={cn(
-              "text-xs font-medium tracking-wider uppercase text-muted-text transition-colors hover:text-espresso",
-              pathname === "/" && "text-espresso border-b-[1.5px] border-brown pb-0.5"
+              "text-xs font-medium tracking-wider uppercase text-smoke transition-colors hover:text-pearl",
+              pathname === "/" && "text-pearl border-b-[1.5px] border-coral pb-0.5"
             )}
           >
             Inicio
@@ -51,8 +55,8 @@ export function Navbar() {
           <Link 
             href="/categorias"
             className={cn(
-              "text-xs font-medium tracking-wider uppercase text-muted-text transition-colors hover:text-espresso",
-              pathname.startsWith("/categorias") && "text-espresso border-b-[1.5px] border-brown pb-0.5"
+              "text-xs font-medium tracking-wider uppercase text-smoke transition-colors hover:text-pearl",
+              pathname.startsWith("/categorias") && "text-pearl border-b-[1.5px] border-coral pb-0.5"
             )}
           >
             Categorías
@@ -60,26 +64,26 @@ export function Navbar() {
           
           {/* Dropdown */}
           <div className="hidden group-hover:block absolute top-full left-0 pt-3">
-            <div className="bg-cream border border-sand rounded-sm min-w-[210px] shadow-lg">
-              <div className="px-4 pt-3 pb-2 border-b border-beige">
-                <div className="text-[0.65rem] tracking-widest uppercase text-brown font-medium mb-2">Ensayos</div>
+            <div className="bg-graphite border border-slate rounded min-w-[210px] shadow-lg shadow-black/30">
+              <div className="px-4 pt-3 pb-2 border-b border-slate">
+                <div className="text-[0.65rem] tracking-widest uppercase text-coral font-medium mb-2">Ensayos</div>
                 {essays.map((essay) => (
                   <Link 
                     key={essay.slug}
                     href={`/ensayos/${essay.slug}`}
-                    className="block text-sm text-text py-1 hover:text-brown transition-colors"
+                    className="block text-sm text-silver py-1 hover:text-coral transition-colors"
                   >
                     {essay.title}
                   </Link>
                 ))}
               </div>
               <div className="px-4 pt-3 pb-3">
-                <div className="text-[0.65rem] tracking-widest uppercase text-brown font-medium mb-2">Poemas sin editar</div>
+                <div className="text-[0.65rem] tracking-widest uppercase text-coral font-medium mb-2">Poemas sin editar</div>
                 {poems.map((poem) => (
                   <Link 
                     key={poem.slug}
                     href={`/poemas/${poem.slug}`}
-                    className="block text-sm text-text py-1 hover:text-brown transition-colors"
+                    className="block text-sm text-silver py-1 hover:text-coral transition-colors"
                   >
                     {poem.title}
                   </Link>
@@ -92,8 +96,8 @@ export function Navbar() {
           <Link 
             href="/sobre-mi"
             className={cn(
-              "text-xs font-medium tracking-wider uppercase text-muted-text transition-colors hover:text-espresso",
-              pathname === "/sobre-mi" && "text-espresso border-b-[1.5px] border-brown pb-0.5"
+              "text-xs font-medium tracking-wider uppercase text-smoke transition-colors hover:text-pearl",
+              pathname === "/sobre-mi" && "text-pearl border-b-[1.5px] border-coral pb-0.5"
             )}
           >
             Sobre mí

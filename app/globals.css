@@ -4,40 +4,41 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Ruido Contracultural Color Palette */
-  --cream: #F5F0E8;
-  --warm-white: #FDFAF5;
-  --beige: #E8E0D0;
-  --sand: #D4C9B0;
-  --brown: #8B6F47;
-  --dark-brown: #5C4B35;
-  --espresso: #3A2E22;
-  --blush: #EDD8C8;
-  --sage: #C2CEC0;
-  --dusty: #D9B8B8;
-  --text: #4A3F35;
-  --muted-text: #8B7D6B;
+  /* Ruido Contracultural - Bold Contrast Palette */
+  --ink: #0D0D0D;
+  --charcoal: #1A1A1A;
+  --graphite: #2A2A2A;
+  --slate: #3D3D3D;
+  --smoke: #6B6B6B;
+  --silver: #9A9A9A;
+  --pearl: #E8E8E8;
+  --snow: #F5F5F5;
+  --white: #FFFFFF;
+  --coral: #FF6B5B;
+  --coral-light: #FF8A7D;
+  --coral-dark: #E55A4A;
+  --amber: #FFB347;
   
-  --background: var(--warm-white);
-  --foreground: var(--text);
-  --card: var(--cream);
-  --card-foreground: var(--espresso);
-  --popover: var(--cream);
-  --popover-foreground: var(--text);
-  --primary: var(--espresso);
-  --primary-foreground: var(--cream);
-  --secondary: var(--beige);
-  --secondary-foreground: var(--espresso);
-  --muted: var(--sand);
-  --muted-foreground: var(--muted-text);
-  --accent: var(--brown);
-  --accent-foreground: var(--cream);
+  --background: var(--ink);
+  --foreground: var(--pearl);
+  --card: var(--charcoal);
+  --card-foreground: var(--pearl);
+  --popover: var(--graphite);
+  --popover-foreground: var(--pearl);
+  --primary: var(--coral);
+  --primary-foreground: var(--ink);
+  --secondary: var(--graphite);
+  --secondary-foreground: var(--pearl);
+  --muted: var(--slate);
+  --muted-foreground: var(--smoke);
+  --accent: var(--coral);
+  --accent-foreground: var(--ink);
   --destructive: #dc2626;
   --destructive-foreground: #fef2f2;
-  --border: var(--sand);
-  --input: var(--beige);
-  --ring: var(--brown);
-  --radius: 3px;
+  --border: var(--slate);
+  --input: var(--graphite);
+  --ring: var(--coral);
+  --radius: 4px;
 }
 
 @theme inline {
@@ -63,18 +64,19 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-cream: var(--cream);
-  --color-warm-white: var(--warm-white);
-  --color-beige: var(--beige);
-  --color-sand: var(--sand);
-  --color-brown: var(--brown);
-  --color-dark-brown: var(--dark-brown);
-  --color-espresso: var(--espresso);
-  --color-blush: var(--blush);
-  --color-sage: var(--sage);
-  --color-dusty: var(--dusty);
-  --color-text: var(--text);
-  --color-muted-text: var(--muted-text);
+  --color-ink: var(--ink);
+  --color-charcoal: var(--charcoal);
+  --color-graphite: var(--graphite);
+  --color-slate: var(--slate);
+  --color-smoke: var(--smoke);
+  --color-silver: var(--silver);
+  --color-pearl: var(--pearl);
+  --color-snow: var(--snow);
+  --color-white: var(--white);
+  --color-coral: var(--coral);
+  --color-coral-light: var(--coral-light);
+  --color-coral-dark: var(--coral-dark);
+  --color-amber: var(--amber);
   --radius-sm: calc(var(--radius) - 1px);
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 2px);
