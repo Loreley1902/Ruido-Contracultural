@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 
@@ -21,8 +22,17 @@ export function Navbar() {
   
   return (
     <nav className="bg-cream border-b border-sand px-6 md:px-10 flex items-center justify-between h-[62px] sticky top-0 z-50">
-      <Link href="/" className="font-serif text-xl text-espresso">
-        Ruido <em className="text-brown">Contracultural</em>
+      <Link href="/" className="flex items-center gap-3">
+        <Image 
+          src="/images/logo.jpg" 
+          alt="Ruido Contracultural logo" 
+          width={36} 
+          height={36}
+          className="rounded-full"
+        />
+        <span className="font-serif text-xl text-espresso">
+          Ruido <em className="text-brown">Contracultural</em>
+        </span>
       </Link>
       
       <ul className="hidden md:flex items-center gap-8">
